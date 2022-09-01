@@ -1,0 +1,8 @@
+[Unit]
+Description= Changes MAC address of device on startup
+
+[Service]
+ExecStart=/bin/bash /usr/sbin/macchange.sh  #in this line specify the path to the script.
+
+[Install]
+WantedBy=multi-user.target
